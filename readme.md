@@ -52,20 +52,20 @@
 * What is a computer address?
   - IP = 74.125.21.113
 
+```
 dotted-decimal notation:    74     .     125    .     21     .    113
 binary notation:         01001010     01111101     00010101     0111001
 hexadecimal notation:       4A           7D           15           71
+```
 
 ## IPv4 and IPv6
 
 * An IPv4 address = 4 bytes = 32 bits = 2^32 unique addresses = 4 billion addresses
-
 * We now have more than 4 billion computing devices so we need more bits to address all of them.
 
 ### Enter IPv6
 
 * Has 16 bytes = 128 bits = 2^128 unique addresses
-
 * That means we can assign 100 addresses to every atom on the surface of the earth.
 
 ### Static vs. Dynamic IP Addresses
@@ -80,7 +80,7 @@ hexadecimal notation:       4A           7D           15           71
 
 ![Anatomy of a URL](https://raw.github.com/ATL-WDI-Curriculum/how-the-internet-works/master/images/anatomy-url.png)
 
-Example:
+#### Example:
 
 `http://www.google.com:80/search?q=taylor+swift`
 
@@ -127,14 +127,10 @@ Ivan is a postal worker who can travel at the speed of light. He's happy to rela
 
 Unfortunately Ivan is incredibly inattentive, so there are a few minor limitations in his service:
 
-* Reliability: He cannot guarantee that every message will
-               be delivered successfully.
-* Order:       He cannot guarantee delivered messages will
-               arrive in the same order that they were sent.
-* Integrity:   He cannot guarantee that all messages will
-               arrive in their entirety.
-* Recipient:   He cannot guarantee that messages will always
-               be delivered to the correct recipient.
+* Reliability: He cannot guarantee that every message will be delivered successfully.
+* Order:       He cannot guarantee delivered messages will arrive in the same order that they were sent.
+* Integrity:   He cannot guarantee that all messages will arrive in their entirety.
+* Recipient:   He cannot guarantee that messages will always be delivered to the correct recipient.
 
 For our lab, we will assume that Ivan:
 
@@ -158,10 +154,12 @@ For our lab, we will assume that Ivan:
 
 Question: If I send 5 packages to Gerry, will all 5 packages
 
+```
 (a) arrive in the order I sent them?
 (b) arrive via the same truck?
 (c) arrive via the same route?
 (d) does it matter?
+```
 
 * Which is Faster?
 * Which is More Fault Tolerant?
@@ -201,12 +199,14 @@ is more important than occassional packet loss.
 ### DNS - similar to the Yellow Pages
 
 I know your name but need to lookup your phone number
+
   becomes
+
 I know your DNS name (google.com) but need to lookup your IP address
 
 Mapping domains to IPs => Domain Name Service
 
-Example: mail.google.com
+Example: `mail.google.com`
   mail = subdomain
   google = 2nd level domain
   com = top level domain
@@ -251,9 +251,11 @@ Hint: think of an IP address as something like a telephone number and the port a
 
 Examples:
 
-    127.0.0.1:3000      port 3000 on the internal loopback address
-    localhost:3000      port 3000 on the internal loopback address
-    74.125.196.101:80   port 80 (the HTTP port) at google.com
+```
+127.0.0.1:3000      port 3000 on the internal loopback address
+localhost:3000      port 3000 on the internal loopback address
+74.125.196.101:80   port 80 (the HTTP port) at google.com
+```
 
 ### Asynchronous Request / Response
 
@@ -280,7 +282,7 @@ Examples:
 * Video - avi, mpeg, mp4, quicktime
 * Vendor - prefix with vnd - vnd.ms-excel
 
-## RESTful approach (Representational state transfer) (Roy Fielding's Ph.D.)
+## RESTful approach (Representational State Transfer) (Roy Fielding's Ph.D.)
 
 * TCP/IP gives us packetized messages with guaranteed delivery and integrity checks.
 
@@ -288,7 +290,7 @@ Examples:
 
 * RESTful is an approach to using HTTP to do CRUD-like operations between a web client and a web app.
 
-* Representational state transfer:
+* Representational State Transfer:
   - client/server separation of responsibilities
     - client manages user state and user interface
     - server keeps persistent data
