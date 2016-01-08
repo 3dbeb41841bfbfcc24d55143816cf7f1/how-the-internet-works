@@ -78,7 +78,7 @@ hexadecimal notation:       4A           7D           15           71
 * Uniform Resource Locator
 * scheme://domain:port/path?query_string#fragment_id
 
-TODO: image goes here.
+![Anatomy of a URL](https://raw.github.com/ATL-WDI-Curriculum/how-the-internet-works/master/images/anatomy-url.png)
 
 Example:
 
