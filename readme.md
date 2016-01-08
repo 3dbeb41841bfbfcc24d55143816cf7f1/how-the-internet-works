@@ -82,7 +82,7 @@ hexadecimal notation:       4A           7D           15           71
 
 #### Example:
 
-`http://www.google.com:80/search?q=taylor+swift`
+[http://www.google.com:80/search?q=taylor+swift](http://www.google.com:80/search?q=taylor+swift)
 
 <table>
   <tr>
@@ -173,6 +173,8 @@ Question: If I send 5 packages to Gerry, will all 5 packages
 * Thus a single message is often split across several packets
 * For example, the request for a 300KB image would require 300 * 1024 / 1500 = 205 packets.
 
+![Anatomy of a URL](https://raw.github.com/ATL-WDI-Curriculum/how-the-internet-works/master/images/tcp-packet-structure.gif)
+
 ### What is a route?
 
 ### TCP = Transmission Control Protocol
@@ -200,25 +202,25 @@ is more important than occassional packet loss.
 
 I know your name but need to lookup your phone number
 
-  becomes
+    becomes
 
 I know your DNS name (google.com) but need to lookup your IP address
 
 Mapping domains to IPs => Domain Name Service
 
 Example: `mail.google.com`
-  mail = subdomain
-  google = 2nd level domain
-  com = top level domain
+
+```
+mail = subdomain
+google = 2nd level domain
+com = top level domain
+```
 
 ### HTTP - HyperText Transport Protocol
 
 * Leverages TCP for sending text and file content with integrity.
 * Defines a new format for addressing higher-level applications.
-
-* HTTP Requests - GET, PUT, POST, DELETE, PATCH
-* HTTP Header / Body
-* HTTP Client / Server
+* HTTP Requests (verbs) - GET, PUT, POST, DELETE, PATCH
 
 ### Packets
 
