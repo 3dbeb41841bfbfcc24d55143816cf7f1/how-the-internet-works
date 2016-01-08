@@ -284,12 +284,12 @@ localhost:3000      port 3000 on the internal loopback address
 * Video - avi, mpeg, mp4, quicktime
 * Vendor - prefix with vnd - vnd.ms-excel
 
-## RESTful approach (Representational State Transfer) (Roy Fielding's Ph.D.)
+## RESTful approach (Representational State Transfer)
+
+> Created by Roy Fielding for his Ph.D. thesis.
 
 * TCP/IP gives us packetized messages with guaranteed delivery and integrity checks.
-
 * HTTP gives us CREATE, PUT, POST, DELETE, and sometimes PATCH
-
 * RESTful is an approach to using HTTP to do CRUD-like operations between a web client and a web app.
 
 * Representational State Transfer:
