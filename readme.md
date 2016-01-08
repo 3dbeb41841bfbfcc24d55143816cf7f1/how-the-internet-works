@@ -78,6 +78,8 @@ hexadecimal notation:       4A           7D           15           71
 * Uniform Resource Locator
 * scheme://domain:port/path?query_string#fragment_id
 
+TODO: image goes here.
+
 Example:
 
 `http://www.google.com:80/search?q=taylor+swift`
